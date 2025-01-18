@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    <title>Suculento</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .hello {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-image: url(imagens/cover-for-emma-blog.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    
+    body {
+        background-color: rgb(10, 10, 10);
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    main .container {
+        width: 1000px;
+        max-width: 98%;
+        height: auto;
+        padding: 20px;
+        /* background-color: red; */
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    .barra {
+        width: 100%;
+        height: auto;
+        background-color: #1e1e1e;
+        padding: 10px 20px;
+        margin: 20px 0;
+    }
+
+    .theme {
+        margin: 4% 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .cards a {
+        color: white;
+        text-decoration: none;
+        transition: .2s;
+    }
+
+    .cards a .card {
+        transition: .2s;
+    }
+
+    .cards a:hover .card {
+        opacity: .9;
+    }
+
+    @media screen and (max-width: 700px) {
+        .cards .card {
+            width: 100%!important;
+        }
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav ol li {
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        background-color: #1e1e1e;
+        border-radius: .4rem;
+    }
+</style>
+<body>
+    <header>
+        <div class="hello" style="display: flex; gap: 10px;">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page"><a href="#">Inical</a></li>
+                  <li class="breadcrumb-item"><a href="sobre nos.html">Sobre nós</a></li>
+                  <li class="breadcrumb-item"><a href="termos de uso.html">Termos de uso</a></li>
+                  <li class="breadcrumb-item"><a href="politica de privacidade.html">Políticas de privacidade</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="banner"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Bem-vindo ao meu blog ✨</h1>
+            <div class="barra">
+                <p>Um espaço dedicado a explorar as novidades mais frescas e as melhores práticas para o seu dia a dia. Aqui, falamos de tudo um pouco, desde dicas para resolver problemas do cotidiano, como "Seu pescoço dói muito?", até tendências e curiosidades que fazem a diferença. Nossa missão é oferecer conteúdos saborosos e relevantes para quem busca estar sempre atualizado e bem informado.</p>
+            </div>
+            <form action="#">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-light" style="border: 1px solid whitesmoke;"><i class="bi bi-search" style="color: #1e1e1e;"></i></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control bg-light" id="floatingInputGroup1" placeholder="Username" style="color: black; width: 300px; max-width: 100%; border: 1px solid whitesmoke;">
+                      <label for="floatingInputGroup1" style="color: black;">Pesquisa</label>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div class="theme">
+                <h1>Posts</h1>
+            </div>
+
+            <div class="cards">
+                <a href="selecionado.html">
+                    <div class="card" style="width: 19.5rem; max-width: 100%; border: 1px solid gray;">
+                        <img src="capas/BB1rpGDt.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="border: 1px solid black; background-color: #1e1e1e;">
+                          <h5 class="card-text" style="color: white;">É assim que são hoje os ícones de beleza dos anos 2000!</h5>
+                          <p class="card-text" style="font-size: 12px;">20-10-2025</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card" style="width: 19.5rem; max-width: 100%; border: 1px solid gray;">
+                        <img src="capas/ee.webp" class="card-img-top" alt="...">
+                        <div class="card-body" style="border: 1px solid black; background-color: #1e1e1e;">
+                          <h5 class="card-text" style="color: white;">Microsoft começou a forçar automaticamente o Windows 11 24H2</h5>
+                          <p class="card-text" style="font-size: 12px;">20-10-2025</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card" style="width: 19.5rem; max-width: 100%; border: 1px solid gray;">
+                        <img src="capas/water-glass-with-water-splash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="border: 1px solid black; background-color: #1e1e1e;">
+                          <h5 class="card-text" style="color: white;">Águas frias causam cancêr ?</h5>
+                          <p class="card-text" style="font-size: 12px;">20-10-2025</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card" style="width: 19.5rem; max-width: 100%; border: 1px solid gray;">
+                        <img src="capas/ee.webp" class="card-img-top" alt="...">
+                        <div class="card-body" style="border: 1px solid black; background-color: #1e1e1e;">
+                          <h5 class="card-text" style="color: white;">Microsoft começou a forçar automaticamente o Windows 11 24H2</h5>
+                          <p class="card-text" style="font-size: 12px;">20-10-2025</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card" style="width: 19.5rem; max-width: 100%; border: 1px solid gray;">
+                        <img src="capas/water-glass-with-water-splash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" style="border: 1px solid black; background-color: #1e1e1e;">
+                          <h5 class="card-text" style="color: white;">Águas frias causam cancêr ?</h5>
+                          <p class="card-text" style="font-size: 12px;">20-10-2025</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <br>
+            <h1>✨Até a próxima!</h1>
+            <div class="barra">
+                <p>Obrigado por nos visitar e aproveitar nossas dicas e novidades. Esperamos que tenha encontrado algo útil, inspirador ou simplesmente interessante! Não se esqueça de voltar sempre para conferir mais conteúdos frescos e relevantes. Enquanto isso, cuide-se, pratique o que aprendeu aqui e espalhe boas vibrações. Até breve! 🌱✨</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
